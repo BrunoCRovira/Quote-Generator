@@ -31,13 +31,13 @@ function newQuote(){
     }
     // Set Quote, Hide Loader
     quoteText.textContent = quote.text;
-     complete();
+    complete();
 }
 
 // Get Quotes From API
 
 async function getQUotes(){
-     loading();
+    loading();
     const apiUrl = 'https://jacintodesign.github.io/quotes-api/data/quotes.json';
     try {
         const response = await fetch(apiUrl);
